@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>AllAPI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
+<h3 class="w3-bar-item"><a href="{{url_for('index')}}">API's</a></h3>
+<a href="{{url_for('cep')}}" class="w3-bar-item w3-button">CEP</a>
+<a href="{{url_for('megasena')}}" class="w3-bar-item w3-button">MEGASENA</a>
+<a href="{{url_for('pokemon')}}" class="w3-bar-item w3-button">POKEMON</a>
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:15%">
+
+<div class="w3-container w3-teal">
+<h1>AllAPI</h1>
+</div>
+
+<img src="/static/images/AllAPI.png" alt="allapi" style="width:100%;">
+
+<div class="w3-container">
+<h2>Disponibilização de API's</h2>
+<p>Site desenvolvido com o objetivo de suprir a necessidade de utilização de API's.</p>
+<p>Aqui estão as mais usadas em projetos de programação.</p>
+<br>
+<h2>O que é API?</h2>
+<p>Também chamado de Application Programming Interface, é o que conecta um aplicativo com outro.</p>
+<p>Agindo como um garçom e fornecendo funcionalidades e serviços de um app para outro.</p>
+</div>
+
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<title>AllAPI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="{{url_for('static', filename='css/cep.css')}}">
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
+<h3 class="w3-bar-item"><a href="{{url_for('index')}}">API's</a></h3>
+<a href="{{url_for('cep')}}" class="w3-bar-item w3-button">CEP</a>
+<a href="{{url_for('megasena')}}" class="w3-bar-item w3-button">MEGASENA</a>
+<a href="{{url_for('pokemon')}}" class="w3-bar-item w3-button">POKEMON</a>
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:15%">
+
+<div class="w3-container w3-teal">
+<h1>CEP</h1>
+</div>
+
+<div class="w3-container">
+<h2>O que é API VIA CEP?</h2>
+<p>Usada para consultar o CEP, ou seja, os dados fornecidos com ele.</p>
+<p>Site oficial do VIA CEP: <a href="https://viacep.com.br/">clique aqui</a></p>
+<br>
+<h2>Como funciona?</h2>
+<p>JSON: https://viacep.com.br/ws/{cep}/json/</p>
+<p>Digitando o CEP com os 8 dígitos sem caracteres especiais. Exemplo: 01001000</p>
+<p>No link do json escreva assim: https://viacep.com.br/ws/01001000/json/</p>
+<br>
+<h2>Exemplo de código no python:</h2>
+<img class="cep" src="/static/images/cep.png" alt="código em python de captura de api">
+<br>
+<br>
+<h2>Valores do JSON</h2>
+URL: https://viacep.com.br/ws/01001000/json/
+<br>
+<img class="resultadocep" src="/static/images/resultadocep.png" alt="resultado do json">
+</div>
+</div>
+    
+</body>
+</html>

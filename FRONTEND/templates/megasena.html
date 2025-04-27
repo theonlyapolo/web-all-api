@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<title>AllAPI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="{{url_for('static', filename='css/cep.css')}}">
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
+<h3 class="w3-bar-item"><a href="{{url_for('index')}}">API's</a></h3>
+<a href="{{url_for('cep')}}" class="w3-bar-item w3-button">CEP</a>
+<a href="{{url_for('megasena')}}" class="w3-bar-item w3-button">MEGASENA</a>
+<a href="{{url_for('pokemon')}}" class="w3-bar-item w3-button">POKEMON</a>
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:15%">
+
+<div class="w3-container w3-teal">
+<h1>MEGASENA</h1>
+</div>
+
+<div class="w3-container">
+<h2>O que é API MEGASENA?</h2>
+<p>Usada para consultar o resultado da famosa megasena, junto com a data do concurso e do próximo.</p>
+<p>Site dessa API: <a href="https://servicebus2.caixa.gov.br/portaldeloterias/api/megasena">clique aqui</a></p>
+<br>
+<h2>Como funciona?</h2>
+<p>Ao entrar no link, você é redirecionado automaticamente para o JSON, com os valores já estabelecidos, a cada dia do sorteio eles atualizam.</p>
+<br>
+<h2>Exemplo de código no python:</h2>
+<img class="cep" src="/static/images/megasena.png" alt="código em python de captura de api">
+<br>
+<br>
+<h2>Valores do JSON</h2>
+<br>
+<img class="resultadomega" src="/static/images/resultadomega1.png" alt="resultado do json">
+<img class="resultadomega" src="/static/images/resultadomega2.png" alt="resultado do json">
+</div>
+</div>
+    
+</body>
+</html>
